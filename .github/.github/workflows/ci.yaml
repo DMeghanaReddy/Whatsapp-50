@@ -1,0 +1,10 @@
+name: Basic CI
+on:
+  pull_request:
+jobs:
+  bulid:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run bulid
+        run: echo "CI is running"
